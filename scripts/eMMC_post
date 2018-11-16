@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#   This file meant to be called only from prep_image script as a post
+#   set of steps to run after the image file has been unmounted
+#
+#   This file will take an image file passed in, and from it create a kernel 
+#   image from the first partition, this is used for mx28 devices with eMMC
+
+echo "Creating kernel image from SD card image"
+START=`fdisk -l $1 | awk '$6 == 53 {print $2}'`
+END=`fdisk -l $1 | awk '$6 == 53 {print $3}'`
+let LEN=$END-$START+1
+echo "LEN is $LEN"
+dd if=$1 of=${1%.dd}-kern.dd bs=512 skip=$START count=$LEN 
+
+echo "Compressing kernel image and creating md5"
+xz ${1%.dd}-kern.dd
+md5sum ${1%.dd}-kern.dd.xz > ${1%.dd}-kern.dd.xz.md5

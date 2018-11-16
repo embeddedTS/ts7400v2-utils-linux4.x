@@ -15,7 +15,7 @@
 # Technologic Systems assumes no responsibility for the end use of this script.
 
 PREP_SCRIPTS=""
-POST_SCRIPTS="" 
+POST_SCRIPTS="eMMC_post" 
 
 # This file is used to test and prepare an image for release. There are board
 # specific tests that occur first, and then all of the generic test/prep
