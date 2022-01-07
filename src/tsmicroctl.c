@@ -1,19 +1,19 @@
-/*  Copyright 2017, Unpublished Work of Technologic Systems
+/*  Copyright 2017-2022 Unpublished Work of Technologic Systems, Inc. dba embeddedTS
 *  All Rights Reserved.
 *
 *  THIS WORK IS AN UNPUBLISHED WORK AND CONTAINS CONFIDENTIAL,
-*  PROPRIETARY AND TRADE SECRET INFORMATION OF TECHNOLOGIC SYSTEMS.
-*  ACCESS TO THIS WORK IS RESTRICTED TO (I) TECHNOLOGIC SYSTEMS EMPLOYEES
+*  PROPRIETARY AND TRADE SECRET INFORMATION OF embeddedTS.
+*  ACCESS TO THIS WORK IS RESTRICTED TO (I) embeddedTS EMPLOYEES
 *  WHO HAVE A NEED TO KNOW TO PERFORM TASKS WITHIN THE SCOPE OF THEIR
-*  ASSIGNMENTS  AND (II) ENTITIES OTHER THAN TECHNOLOGIC SYSTEMS WHO
+*  ASSIGNMENTS  AND (II) ENTITIES OTHER THAN embeddedTS WHO
 *  HAVE ENTERED INTO  APPROPRIATE LICENSE AGREEMENTS.  NO PART OF THIS
 *  WORK MAY BE USED, PRACTICED, PERFORMED, COPIED, DISTRIBUTED, REVISED,
 *  MODIFIED, TRANSLATED, ABRIDGED, CONDENSED, EXPANDED, COLLECTED,
 *  COMPILED,LINKED,RECAST, TRANSFORMED, ADAPTED IN ANY FORM OR BY ANY
 *  MEANS,MANUAL, MECHANICAL, CHEMICAL, ELECTRICAL, ELECTRONIC, OPTICAL,
 *  BIOLOGICAL, OR OTHERWISE WITHOUT THE PRIOR WRITTEN PERMISSION AND
-*  CONSENT OF TECHNOLOGIC SYSTEMS . ANY USE OR EXPLOITATION OF THIS WORK
-*  WITHOUT THE PRIOR WRITTEN CONSENT OF TECHNOLOGIC SYSTEMS  COULD
+*  CONSENT OF embeddedTS . ANY USE OR EXPLOITATION OF THIS WORK
+*  WITHOUT THE PRIOR WRITTEN CONSENT OF embeddedTS  COULD
 *  SUBJECT THE PERPETRATOR TO CRIMINAL AND CIVIL LIABILITY.
 */
 /* To compile tsmicroctl, use the appropriate cross compiler and run the
@@ -39,7 +39,7 @@
 
 #include "i2c-dev.h"
 
-const char copyright[] = "Copyright (c) Technologic Systems - " __DATE__ ;
+const char copyright[] = "Copyright (c) embeddedTS - " __DATE__ ;
 
 #ifdef CTL
 int model = 0;
@@ -124,7 +124,7 @@ void do_info(int twifd)
 
 static void usage(char **argv) {
 	fprintf(stderr, "Usage: %s [OPTION] ...\n"
-	  "Technologic Systems Microcontroller Access\n"
+	  "embeddedTS Microcontroller Access\n"
 	  "\n"
 	  "  -i, --info              Get info about the microcontroller\n"
 	  "  -X, --resetswitchon     Enable reset switch\n"

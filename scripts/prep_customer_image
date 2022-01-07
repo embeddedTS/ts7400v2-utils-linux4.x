@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright (c) 2017 - Technologic Systems
+# Copyright (c) 2017-2022 Technologic Systems, Inc. dba embeddedTS
 
 # WARNING! READ BEFORE USING THIS SCRIPT!
 # 
@@ -12,7 +12,7 @@
 # all image files produced by this script should be throughly checked before
 # being officially released.
 #
-# Technologic Systems assumes no responsibility for the end use of this script.
+# embeddedTS assumes no responsibility for the end use of this script.
 
 PREP_SCRIPTS=""
 POST_SCRIPTS="eMMC_post" 

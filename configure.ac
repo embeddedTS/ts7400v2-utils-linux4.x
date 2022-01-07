@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT(ts7400v2-utils-linux4.x, 1.0, support@embeddedarm.com)
+AC_INIT(ts7400v2-utils-linux4.x, 1.0, support@embeddedTS.com)
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/i2c-dev.h])
 
