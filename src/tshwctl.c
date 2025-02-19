@@ -27,7 +27,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <getopt.h>
-#include "gpiolib.h"
 #include "i2c-rtc.h"
 
 const char copyright[] = "Copyright (c) embeddedTS - " __DATE__ ;
